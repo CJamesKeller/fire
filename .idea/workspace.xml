@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6130b1ca-4f8d-4258-97ab-cb7cde1c43a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,10 +16,10 @@
     <session id="384583180">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -35,12 +36,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1139" />
+          <entry key="java" value="2155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1139" />
+          <entry key="JAVA" value="2155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -53,13 +54,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="1230">
+              <caret line="82" column="52" lean-forward="true" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
               <folding>
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1293#1294#0" expanded="true" />
+                <element signature="e#1342#1343#0" expanded="true" />
+                <element signature="e#1386#1387#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,8 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,12 +113,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534906453896" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535042513497" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,18 +158,19 @@
       <option name="presentableId" value="Default" />
       <updated>1534731188736</updated>
       <workItem from="1534731190531" duration="1439000" />
-      <workItem from="1534904757559" duration="1691000" />
+      <workItem from="1534904757559" duration="1862000" />
+      <workItem from="1535037803801" duration="4032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3130000" />
+    <option name="totallyTimeSpent" value="7333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="23" width="1233" height="708" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25944585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.263644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -213,13 +215,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="1230">
+          <caret line="82" column="52" lean-forward="true" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
           <folding>
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
           </folding>
         </state>
       </provider>

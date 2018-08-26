@@ -1,46 +1,38 @@
+package cjameskeller;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        int linesOfCode;
-        int yearsExp;
-        int bonus;
-        int jobChance;
-        String result;
-        int count;
-        String yearsOfExperience;
+        Candidate candidate = new Candidate();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many years of experience do you have?");
-        yearsOfExperience = scanner.nextLine();
+        candidate.yearsOfExperience = scanner.nextLine();
 
-        linesOfCode = 9000;
-        bonus = 0;
-        count = 5;
+        candidate.yearsExp = Integer.parseInt(candidate.yearsOfExperience);
 
-        yearsExp = Integer.parseInt(yearsOfExperience);
-
-        if (isGettingBonus(linesOfCode, yearsExp)) {
-            bonus = 1000;
+        if (isGettingBonus(candidate.linesOfCode, candidate.yearsExp)) {
+            candidate.bonus = 1000;
         }
 
-        if ((bonus > 0) && (yearsExp > 1)) {
-            jobChance = calcJobChance(linesOfCode, yearsExp, bonus);
+        if ((candidate.bonus > 0) && (candidate.yearsExp > 1)) {
+            candidate.jobChance = calcJobChance(candidate.linesOfCode, candidate.yearsExp, candidate.bonus);
         } else {
-            jobChance = calcJobChance(linesOfCode);
+            candidate.jobChance = calcJobChance(candidate.linesOfCode);
         }
 
-        result = resultString(jobChance);
+        candidate.result = resultString(candidate.jobChance);
 
         System.out.println("Counting down to results:");
 
-        while (count != 0) {
-            System.out.println(count);
-            count--;
+        while (candidate.count != 0) {
+            System.out.println(candidate.count);
+            candidate.count--;
         }
 
-        System.out.println(result + jobChance);
+        System.out.println(candidate.result + candidate.jobChance);
 
         scanner.close();
     }

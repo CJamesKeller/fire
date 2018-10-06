@@ -2,7 +2,12 @@ package cjameskeller;
 
 public class Candidate {
 
-    public int linesOfCode = 9000;
+    public Candidate(int yearsExp, int count) {
+        this.yearsExp = yearsExp;
+        this.count = count;
+    }
+
+    private int linesOfCode = 9000;
     public int yearsExp;
     public int bonus = 0;
     public int jobChance;
@@ -10,4 +15,11 @@ public class Candidate {
     public int count = 5;
     public String yearsOfExperience;
 
+    public void setLinesOfCode(int linesOfCode) {
+        this.linesOfCode = linesOfCode;
+    }
+
+    public int getLinesOfCode() {
+        return this.linesOfCode;
+    }
 }

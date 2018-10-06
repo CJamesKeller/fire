@@ -1,26 +1,32 @@
 package cjameskeller;
 
 import java.util.Scanner;
+import static java.lang.Thread.sleep;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Candidate candidate = new Candidate();
+    public static void main(String[] args) throws InterruptedException {
+        Candidate candidate = new Candidate(5, 4);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How many years of experience do you have?");
-        candidate.yearsOfExperience = scanner.nextLine();
+        candidate.setLinesOfCode(10000);
 
-        candidate.yearsExp = Integer.parseInt(candidate.yearsOfExperience);
+        if (0 > candidate.yearsExp) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("How many years of experience do you have?");
+            candidate.yearsOfExperience = scanner.nextLine();
 
-        if (isGettingBonus(candidate.linesOfCode, candidate.yearsExp)) {
+            candidate.yearsExp = Integer.parseInt(candidate.yearsOfExperience);
+            scanner.close();
+        }
+
+        if (isGettingBonus(candidate.getLinesOfCode(), candidate.yearsExp)) {
             candidate.bonus = 1000;
         }
 
         if ((candidate.bonus > 0) && (candidate.yearsExp > 1)) {
-            candidate.jobChance = calcJobChance(candidate.linesOfCode, candidate.yearsExp, candidate.bonus);
+            candidate.jobChance = calcJobChance(candidate.getLinesOfCode(), candidate.yearsExp, candidate.bonus);
         } else {
-            candidate.jobChance = calcJobChance(candidate.linesOfCode);
+            candidate.jobChance = calcJobChance(candidate.getLinesOfCode());
         }
 
         candidate.result = resultString(candidate.jobChance);
@@ -28,13 +34,12 @@ public class Main {
         System.out.println("Counting down to results:");
 
         while (candidate.count != 0) {
+            sleep(1000);
             System.out.println(candidate.count);
             candidate.count--;
         }
 
         System.out.println(candidate.result + candidate.jobChance);
-
-        scanner.close();
     }
 
     private static boolean isGettingBonus(int linesOfCode, int yearsExp) {
